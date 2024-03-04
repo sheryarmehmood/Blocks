@@ -176,3 +176,27 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+
+//hero-block registration
+function ankr_agency_custom_blocks() {
+    /* Check if function exists */
+    if ( function_exists( 'acf_register_block' ) ) {
+        /* Register new redesign blocks */
+        acf_register_block( array(
+            'name'            => 'hero-block',
+            'title'           => __( 'Hero block' ),
+            'description'     => __( 'FHRC Hero Section' ),
+            'render_template' => '/custom-blocks/hero-block/hero-block.php',
+            'enqueue_assets'  => function () {
+                wp_enqueue_style( 'home-hero-block-style', get_template_directory_uri() . '/custom-blocks/hero-block/hero-block.css', array(), '1.0', 'all' );
+                wp_enqueue_script( 'home-hero-block-script', get_template_directory_uri() . '/custom-blocks/hero-block/hero-block.js', array(), '1.0', true );
+            },
+            'category'        => 'blocks',
+            'icon'            => 'welcome-add-page',
+            'keywords'        => array( 'heroblock', 'hero' ),
+            'multiple'        => true,
+            'mode'            => 'edit',
+        ) );
+    }
+}
+add_action( 'acf/init', 'ankr_agency_custom_blocks' );

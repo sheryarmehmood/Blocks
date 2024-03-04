@@ -1,0 +1,92 @@
+/**hero block**/
+.hero {
+    position: relative;
+    min-height: 480px;
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+  .hero:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(54, 54, 66, 0.6);
+  }
+  @media (min-width: 576px) {
+    .hero {
+      min-height: 659px;
+    }
+  }
+  .hero .inner {
+    position: relative;
+    z-index: 1;
+  }
+  .hero__text {
+    color: #fff;
+  }
+  .hero__text h1 {
+    max-width: 650px;
+    width: 100%;
+    margin-bottom: 15px;
+    text-shadow: rgba(0, 0, 0, 0.325) 0px 1.8px 7.65px;
+  }
+  @media (min-width: 768px) {
+    .hero__text h1 {
+      margin-bottom: 30px;
+    }
+  }
+  .hero__text h1 i {
+    color: #FFDE59;
+  }
+  .hero__text .description {
+    font-size: 14pt;
+    line-height: 1.4;
+    margin-bottom: 30px;
+    text-shadow: rgba(0, 0, 0, 0.6) 0px 0.999994px 7.49995px;
+  }
+  @media (min-width: 768px) {
+    .hero__text .description {
+      font-size: 16pt;
+      line-height: 1.4;
+      margin-bottom: 51px;
+    }
+  }
+  @media (min-width: 992px) {
+    .hero__text .description {
+      font-size: 18pt;
+      line-height: 1.4;
+    }
+  }
+  @media (min-width: 1200px) {
+    .hero__text .description {
+      font-size: 20pt;
+      line-height: 1.4;
+    }
+  }
+  .hero__text .btn {
+    max-width: max-content;
+    width: 100%;
+    font-size: 12pt;
+    line-height: 1.4;
+  }
+  @media (min-width: 576px) {
+    .hero__text .btn {
+      max-width: 300px;
+      font-size: 15pt;
+      line-height: 1.4;
+    }
+  }
+  @media (min-width: 768px) {
+    .hero__text .btn {
+      font-size: 15pt;
+      line-height: 1.4;
+    }
+  }
+  /**hero block**/
+  
