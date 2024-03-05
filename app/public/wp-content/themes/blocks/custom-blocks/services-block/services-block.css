@@ -1,0 +1,202 @@
+/* services block */
+
+.services {
+    background-color: #f4f4f4;
+    padding: 50px 0 50px;
+  }
+  @media (min-width: 768px) {
+    .services {
+      padding: 60px 0 60px;
+    }
+  }
+  @media (min-width: 992px) {
+    .services {
+      padding: 80px 0 80px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .services {
+      padding: 117px 0 177px;
+    }
+  }
+  .services .sec__head {
+    margin-bottom: 75px;
+  }
+  .services .sec__head .sec__head--title {
+    color: #566B89;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  @media (min-width: 768px) {
+    .services .sec__head .sec__head--title {
+      margin-bottom: 30px;
+    }
+  }
+  .services .sec__head .sec__head--title h2 {
+    font-size: 13.5pt;
+    line-height: 1.4;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  @media (min-width: 768px) {
+    .services .sec__head .sec__head--title h2 {
+      font-size: 15pt;
+      line-height: 1.4;
+    }
+  }
+  .services .sec__head .sec__head--title .sec__head--title-arc {
+    flex: 1;
+    margin-left: 36px;
+    height: 1px;
+    display: block;
+    background-color: #566B89;
+  }
+  .services .sec__head .sec__head--headline {
+    font-size: 12pt;
+    line-height: 1.4;
+    max-width: 988px;
+    width: 100%;
+    margin: 0 auto;
+    color: #363642;
+    font-weight: 300;
+  }
+  @media (min-width: 768px) {
+    .services .sec__head .sec__head--headline {
+      font-size: 13pt;
+      line-height: 1.4;
+    }
+  }
+  @media (min-width: 992px) {
+    .services .sec__head .sec__head--headline {
+      font-size: 14pt;
+      line-height: 1.4;
+    }
+  }
+  @media (min-width: 1200px) {
+    .services .sec__head .sec__head--headline {
+      font-size: 15pt;
+      line-height: 1.4;
+    }
+  }
+  .services__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 27px;
+    grid-row-gap: 40px;
+    max-width: 570px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  @media (min-width: 768px) {
+    .services__list {
+      max-width: 750px;
+      grid-row-gap: 55px;
+    }
+  }
+  @media (min-width: 992px) {
+    .services__list {
+      grid-template-columns: repeat(5, 1fr);
+      grid-column-gap: 27px;
+      grid-row-gap: 73px;
+      max-width: 100%;
+      padding: 0 0;
+    }
+  }
+  .services .service {
+    position: relative;
+  }
+  .services .service__image img {
+    width: 100%;
+    height: 258px;
+    object-fit: cover;
+  }
+  @media (min-width: 992px) {
+    .services .service:nth-child(7n + 1) {
+      grid-column: 1/4;
+    }
+  }
+  @media (min-width: 992px) {
+    .services .service:nth-child(7n + 3) {
+      grid-column: 2;
+    }
+  }
+  @media (min-width: 992px) {
+    .services .service:nth-child(7n + 4) {
+      grid-column: 3;
+    }
+  }
+  @media (min-width: 992px) {
+    .services .service:nth-child(7n + 5) {
+      grid-column: 4/6;
+    }
+  }
+  @media (min-width: 992px) {
+    .services .service:nth-child(7n + 6) {
+      grid-column: 2;
+    }
+  }
+  @media (min-width: 992px) {
+    .services .service:nth-child(7n + 7) {
+      grid-column: 3/5;
+    }
+  }
+  .services .service__title {
+    position: absolute;
+    left: 0;
+    bottom: -25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 25px;
+  }
+  @media (min-width: 992px) {
+    .services .service__title {
+      bottom: -30px;
+    }
+  }
+  @media (min-width: 992px) {
+    .services .service__title {
+      top: -32px;
+      bottom: auto;
+    }
+  }
+  .services .service__title h3 {
+    font-size: 14pt;
+    line-height: 1.4;
+    background-color: #566B89;
+    color: #fff;
+    text-transform: capitalize;
+    min-height: 50px;
+    padding: 5px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    min-width: 200px;
+    text-align: center;
+  }
+  @media (min-width: 768px) {
+    .services .service__title h3 {
+      font-size: 16pt;
+      line-height: 1.4;
+      min-height: 60px;
+    }
+  }
+  @media (min-width: 992px) {
+    .services .service__title h3 {
+      min-width: 170px;
+      min-height: 70px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .services .service__title h3 {
+      font-size: 20pt;
+      line-height: 1.4;
+      padding: 5px 32px;
+      min-width: 240px;
+    }
+  }
+  
+  /* services block */

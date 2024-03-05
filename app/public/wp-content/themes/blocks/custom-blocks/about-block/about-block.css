@@ -1,0 +1,112 @@
+/**about block**/
+.about__note {
+    background-color: #363642;
+    padding: 50px 0 30px;
+  }
+  @media (min-width: 768px) {
+    .about__note {
+      padding: 69px 0 64px;
+    }
+  }
+  .about__note .sec__head .sec__head--title {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  @media (min-width: 768px) {
+    .about__note .sec__head .sec__head--title {
+      margin-bottom: 30px;
+    }
+  }
+  .about__note .sec__head .sec__head--title h2 {
+    font-size: 13.5pt;
+    line-height: 1.4;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  @media (min-width: 768px) {
+    .about__note .sec__head .sec__head--title h2 {
+      font-size: 15pt;
+      line-height: 1.4;
+    }
+  }
+  .about__note .sec__head .sec__head--title .sec__head--title-arc {
+    flex: 1;
+    margin-left: 36px;
+    height: 1px;
+    display: block;
+    background-color: #D3D7E3;
+  }
+  .about__note .sec__head .sec__head--headline {
+    font-size: 12pt;
+    line-height: 1.4;
+    max-width: 988px;
+    width: 100%;
+    margin: 0 auto;
+    color: #D3D7E3;
+    font-weight: 300;
+  }
+  @media (min-width: 768px) {
+    .about__note .sec__head .sec__head--headline {
+      font-size: 13pt;
+      line-height: 1.4;
+    }
+  }
+  @media (min-width: 992px) {
+    .about__note .sec__head .sec__head--headline {
+      font-size: 14pt;
+      line-height: 1.4;
+    }
+  }
+  @media (min-width: 1200px) {
+    .about__note .sec__head .sec__head--headline {
+      font-size: 15pt;
+      line-height: 1.4;
+    }
+  }
+  .about__banner {
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    padding: 80px 0;
+    text-align: center;
+    position: relative;
+  }
+  @media (min-width: 992px) {
+    .about__banner {
+      min-height: 600px;
+    }
+  }
+  .about__banner--bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    filter: grayscale(1);
+  }
+  .about__banner .inner {
+    position: relative;
+    z-index: 1;
+  }
+  .about__banner h2 {
+    font-size: 17pt;
+    line-height: 1.4;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    color: #fff;
+    text-shadow: 0px 1px 1px #000;
+  }
+  @media (min-width: 1200px) {
+    .about__banner h2 {
+      font-size: 36pt;
+      line-height: 1.4;
+    }
+  }
+  
+  /**about block**/

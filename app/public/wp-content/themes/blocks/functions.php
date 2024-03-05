@@ -181,7 +181,10 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 function ankr_agency_custom_blocks() {
     /* Check if function exists */
     if ( function_exists( 'acf_register_block' ) ) {
-        /* Register new redesign blocks */
+		
+		/* Registering custom blocks */
+
+		// Register Hero Block
         acf_register_block( array(
             'name'            => 'hero-block',
             'title'           => __( 'Hero block' ),
@@ -199,6 +202,7 @@ function ankr_agency_custom_blocks() {
         ) );
 
 
+		// Register About Block
 		acf_register_block( array(
             'name'            => 'about-block',
             'title'           => __( 'About block' ),
@@ -214,6 +218,26 @@ function ankr_agency_custom_blocks() {
             'multiple'        => true,
             'mode'            => 'edit',
         ) );
+
+
+		// Register Services Block
+		acf_register_block( array(
+            'name'            => 'services-block',
+            'title'           => __( 'Services block' ),
+            'description'     => __( 'FHRC Services Section' ),
+            'render_template' => '/custom-blocks/services-block/services-block.php',
+            'enqueue_assets'  => function () {
+                wp_enqueue_style( 'services-block-style', get_template_directory_uri() . '/custom-blocks/services-block/services-block.css', array(), '1.0', 'all' );
+                wp_enqueue_script( 'services-block-script', get_template_directory_uri() . '/custom-blocks/services-block/services-block.js', array(), '1.0', true );
+            },
+            'category'        => 'blocks',
+            'icon'            => 'welcome-add-page',
+            'keywords'        => array( 'servicesblock', 'services' ),
+            'multiple'        => true,
+            'mode'            => 'edit',
+        ) );
+
+
     }
 }
 add_action( 'acf/init', 'ankr_agency_custom_blocks' );
