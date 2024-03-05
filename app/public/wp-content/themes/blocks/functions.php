@@ -238,6 +238,45 @@ function ankr_agency_custom_blocks() {
         ) );
 
 
+		// Register Projects Videos Block
+		acf_register_block( array(
+            'name'            => 'projects-block',
+            'title'           => __( 'Projects block' ),
+            'description'     => __( 'FHRC Projects Section' ),
+            'render_template' => '/custom-blocks/projects-block/projects-block.php',
+            'enqueue_assets'  => function () {
+                wp_enqueue_style( 'projects-block-style', get_template_directory_uri() . '/custom-blocks/projects-block/projects-block.css', array(), '1.0', 'all' );
+                wp_enqueue_script( 'projects-block-script', get_template_directory_uri() . '/custom-blocks/projects-block/projects-block.js', array(), '1.0', true );
+            },
+            'category'        => 'blocks',
+            'icon'            => 'welcome-add-page',
+            'keywords'        => array( 'projectsblock', 'projects' ),
+            'multiple'        => true,
+            'mode'            => 'edit',
+        ) );
+
+
+		// Register Projects Videos Block
+		acf_register_block( array(
+            'name'            => 'team-block',
+            'title'           => __( 'Team block' ),
+            'description'     => __( 'FHRC Team Section' ),
+            'render_template' => '/custom-blocks/team-block/team-block.php',
+            'enqueue_assets'  => function () {
+                wp_enqueue_style( 'team-block-style', get_template_directory_uri() . '/custom-blocks/team-block/team-block.css', array(), '1.0', 'all' );
+                wp_enqueue_script( 'team-block-script', get_template_directory_uri() . '/custom-blocks/team-block/team-block.js', array(), '1.0', true );
+            },
+            'category'        => 'blocks',
+            'icon'            => 'welcome-add-page',
+            'keywords'        => array( 'teamblock', 'team' ),
+            'multiple'        => true,
+            'mode'            => 'edit',
+        ) );
+
+
+
+
+
     }
 }
 add_action( 'acf/init', 'ankr_agency_custom_blocks' );
