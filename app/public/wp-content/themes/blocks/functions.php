@@ -197,6 +197,24 @@ function ankr_agency_custom_blocks() {
             'multiple'        => true,
             'mode'            => 'edit',
         ) );
+
+
+		acf_register_block( array(
+            'name'            => 'about-block',
+            'title'           => __( 'About block' ),
+            'description'     => __( 'FHRC About Section' ),
+            'render_template' => '/custom-blocks/about-block/about-block.php',
+            'enqueue_assets'  => function () {
+                wp_enqueue_style( 'home-about-block-style', get_template_directory_uri() . '/custom-blocks/about-block/about-block.css', array(), '1.0', 'all' );
+                wp_enqueue_script( 'home-about-block-script', get_template_directory_uri() . '/custom-blocks/about-block/about-block.js', array(), '1.0', true );
+            },
+            'category'        => 'blocks',
+            'icon'            => 'welcome-add-page',
+            'keywords'        => array( 'aboutblock', 'about' ),
+            'multiple'        => true,
+            'mode'            => 'edit',
+        ) );
     }
 }
 add_action( 'acf/init', 'ankr_agency_custom_blocks' );
+

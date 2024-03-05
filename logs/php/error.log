@@ -1,1 +1,4 @@
 [04-Mar-2024 18:46:07 UTC] PHP Parse error:  syntax error, unexpected token ">" in C:\Users\Hp\Local Sites\blocks-sheryar\app\public\wp-content\themes\blocks\index.php on line 29
+[05-Mar-2024 14:20:40 UTC] PHP Fatal error:  Cannot redeclare ankr_agency_custom_blocks() (previously declared in C:\Users\Hp\Local Sites\blocks-sheryar\app\public\wp-content\themes\blocks\functions.php:183) in C:\Users\Hp\Local Sites\blocks-sheryar\app\public\wp-content\themes\blocks\functions.php on line 223
+[05-Mar-2024 14:20:40 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\Hp\Local Sites\blocks-sheryar\app\public\wp-includes\class-wp-recovery-mode-email-service.php on line 367
+[05-Mar-2024 14:20:40 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\Hp\Local Sites\blocks-sheryar\app\public\wp-includes\class-wp-recovery-mode-email-service.php on line 368
