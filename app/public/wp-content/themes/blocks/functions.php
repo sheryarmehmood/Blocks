@@ -256,7 +256,7 @@ function ankr_agency_custom_blocks() {
         ) );
 
 
-		// Register Projects Videos Block
+		// Register team Block
 		acf_register_block( array(
             'name'            => 'team-block',
             'title'           => __( 'Team block' ),
@@ -273,6 +273,23 @@ function ankr_agency_custom_blocks() {
             'mode'            => 'edit',
         ) );
 
+
+		// Register team Block
+		acf_register_block( array(
+            'name'            => 'contact-block',
+            'title'           => __( 'Contact block' ),
+            'description'     => __( 'FHRC Contact Section' ),
+            'render_template' => '/custom-blocks/contact-block/contact-block.php',
+            'enqueue_assets'  => function () {
+                wp_enqueue_style( 'contact-block-style', get_template_directory_uri() . '/custom-blocks/contact-block/contact-block.css', array(), '1.0', 'all' );
+                wp_enqueue_script( 'contact-block-script', get_template_directory_uri() . '/custom-blocks/contact-block/contact-block.js', array(), '1.0', true );
+            },
+            'category'        => 'blocks',
+            'icon'            => 'welcome-add-page',
+            'keywords'        => array( 'contactblock', 'contact' ),
+            'multiple'        => true,
+            'mode'            => 'edit',
+        ) );
 
 
 
