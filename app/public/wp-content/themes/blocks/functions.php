@@ -274,7 +274,7 @@ function ankr_agency_custom_blocks() {
         ) );
 
 
-		// Register team Block
+		// Register Contact Block
 		acf_register_block( array(
             'name'            => 'contact-block',
             'title'           => __( 'Contact block' ),
@@ -291,7 +291,23 @@ function ankr_agency_custom_blocks() {
             'mode'            => 'edit',
         ) );
 
-
+		
+		// Register Testimonials Block
+		acf_register_block( array(
+            'name'            => 'testimonials-block',
+            'title'           => __( 'Testimonials block' ),
+            'description'     => __( 'FHRC Testimonials Section' ),
+            'render_template' => '/custom-blocks/testimonials-block/testimonials-block.php',
+            'enqueue_assets'  => function () {
+                wp_enqueue_style( 'testimonials-block-style', get_template_directory_uri() . '/custom-blocks/testimonials-block/testimonials-block.css', array(), '1.0', 'all' );
+                wp_enqueue_script( 'testimonials-block-script', get_template_directory_uri() . '/custom-blocks/testimonials-block/testimonials-block.js', array(), '1.0', true );
+            },
+            'category'        => 'blocks',
+            'icon'            => 'welcome-add-page',
+            'keywords'        => array( 'testimonialsblock', 'testimonials' ),
+            'multiple'        => true,
+            'mode'            => 'edit',
+        ) );
 
 
     }
